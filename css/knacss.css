@@ -64,12 +64,12 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 p:last-child {margin-bottom: 0;} 
 
 /* styling headings */
-.h1-like {}
-.h2-like {}
-.h3-like {}
-.h4-like {}
-.h5-like {}
-.h6-like {}
+h1, .h1-like {}
+h2, .h2-like {}
+h3, .h3-like {}
+h4, .h4-like {}
+h5, .h5-like {}
+h6, .h6-like {}
 
 /* max values */
 img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
