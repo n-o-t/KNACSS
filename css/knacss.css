@@ -1,11 +1,11 @@
-/* 
+/*
 KNACSS.com @author : Raphael Goetter, Alsacreations
 Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 */
 
 
 /* ----------------------------- */
-/* summary                       */
+/* summary */
 /* ----------------------------- */
 /*
 1- colors
@@ -22,16 +22,16 @@ Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 */
 
 /* ----------------------------- */
-/* ==colors                      */
+/* ==colors */
 /* ----------------------------- */
 
 
 /* ----------------------------- */
-/*   ==reset                     */
+/* ==reset */
 /* ----------------------------- */
 
 /* base font-size corresponds to 10px */
-html {font-size: 62.5%;} 
+html {font-size: 62.5%;}
 body {
     background-color: #fff;
     color: #000;
@@ -61,7 +61,7 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 }
 
 /* avoid last paragraph bottom margin */
-p:last-child {margin-bottom: 0;} 
+p:last-child {margin-bottom: 0;}
 
 /* styling headings */
 h1, .h1-like {}
@@ -91,7 +91,7 @@ a img {border: 0;}
 
 /* buttons */
 .btn {
-	display: inline-block;
+display: inline-block;
 }
 .btn.alternate {}
 .btn.highlight {}
@@ -107,31 +107,31 @@ a img {border: 0;}
 
 
 /* ----------------------------- */
-/* ==layout and modules          */
+/* ==layout and modules */
 /* ----------------------------- */
 
-/*  switching box model for all elements */
-* { 
+/* switching box model for all elements */
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;	
+    box-sizing: border-box; 
 }
 
 /* float layout */
 /* ----------- */
 
 /* block that can contains several .mod , can contains floats */
-.line {} 
-/*  module, contains floats */
+.line {}
+/* module, contains floats */
 .mod {
     padding: 1em;
 }
 
-/* generaly inside .mod, can contains .item */ 
+/* generaly inside .mod, can contains .item */
 .items {}
 
 /* fluid, contains floats, can be placed next to a float */
-.item { 
+.item {
     overflow: hidden;
 }
 
@@ -147,20 +147,20 @@ a img {border: 0;}
     padding: 1em;
 }
 
-/* 1em gutter between elements if parent is .gut */ 
-.line.gut > * + * { 
+/* 1em gutter between elements if parent is .gut */
+.line.gut > * + * {
     margin-left: 1em;
 }
-.row.gut > * + * { 
+.row.gut > * + * {
     border-left: 1em solid #fff; /* must be color of parent background */
 }
 
-/* blocks that needs to be placed under floats */ 
+/* blocks that needs to be placed under floats */
 .clear, .line, .row {
     clear: both;
 }
 
-/* blocks that can contains floats */ 
+/* blocks that can contains floats */
 .clearfix:after, .line:after, .mod:after {
     content: "";
     display: table;
@@ -178,7 +178,7 @@ a img {border: 0;}
 /* right and 1em gutter */
 .right {
     float: right; margin-left: 1em
-} 
+}
 .center {margin: auto;}
 .txtleft {text-align: left;}
 .txtright {text-align: right;}
@@ -224,26 +224,26 @@ a img {border: 0;}
 /* hiding content */
 .visually-hidden { /* always hidden for screens */
     position: absolute; left:-7000px; text-indent:-7000px; overflow: hidden
-} 
-.desktop-hidden {display: none;}  /* hidden on desktop */
-.mobile-hidden {}  /* hidden on mobile */
-.tablet-hidden {}  /* hidden on tablets */
-.phone-hidden {}  /* hidden on smartphones */
+}
+.desktop-hidden {display: none;} /* hidden on desktop */
+.mobile-hidden {} /* hidden on mobile */
+.tablet-hidden {} /* hidden on tablets */
+.phone-hidden {} /* hidden on smartphones */
 
 /* ----------------------------- */
-/* ==header                      */
-/* ----------------------------- */
-
-/* ----------------------------- */
-/* ==sidebar                     */
+/* ==header */
 /* ----------------------------- */
 
 /* ----------------------------- */
-/* ==footer                      */
+/* ==sidebar */
 /* ----------------------------- */
 
 /* ----------------------------- */
-/* ==forms                       */
+/* ==footer */
+/* ----------------------------- */
+
+/* ----------------------------- */
+/* ==forms */
 /* ----------------------------- */
 
 form, fieldset {
@@ -254,33 +254,33 @@ input, button, select {
 }
 
 /* ----------------------------- */
-/* ==main                        */
+/* ==main */
 /* ----------------------------- */
 
 /* ----------------------------- */
-/* ==iefix                       */
+/* ==iefix */
 /* ----------------------------- */
 
 /* haslayout for IE6/IE7 */
 .ie7 .clearfix,.ie7 .line, .ie7 .mod, .ie7 .row, .ie7 .col {
-    zoom: 1; 
+    zoom: 1;
 }
 
 /* inline-block and table-cell for IE6/IE7 */
-.ie7 .btn, .ie7 .col { 
+.ie7 .btn, .ie7 .col {
     display: inline;
     zoom: 1;
 }
 
 /* box-sizing for IE6/IE7 */
 /* https://github.com/Schepp/box-sizing-polyfill
-.ie7 *  {
-    behavior: url(/js/boxsizing.htc);
+.ie7 * {
+behavior: url(/js/boxsizing.htc);
 }
 */
 
 /* ----------------------------- */
-/* ==print                       */
+/* ==print */
 /* ----------------------------- */
 
 /* quick print reset */
@@ -291,18 +291,18 @@ input, button, select {
 }
 
 /* ----------------------------- */
-/* ==mobile                      */
+/* ==mobile */
 /* ----------------------------- */
 
 /* quick smartphone reset */
 @media (max-width: 640px) {
     .phone-hidden {display: none}
     .mod, .col {
-    	display: block  !important;
-    	margin: 0 !important;
-    	border: 0 !important;
-    	float: none !important;
-    	width: auto !important;
+     display: block !important;
+     margin: 0 !important;
+     border: 0 !important;
+     float: none !important;
+     width: auto !important;
     }
     [class*="mw"], [class*="w9"], [class*="w8"],
     [class*="w7"], [class*="w6"], [class*="w5"],
