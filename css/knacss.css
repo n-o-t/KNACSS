@@ -267,6 +267,7 @@ input, button, select {
 }
 
 /* inline-block and table-cell for IE6/IE7 */
+/* warning : .col needs width on IE6/IE7 */
 .ie7 .btn, .ie7 .col {
     display: inline;
     zoom: 1;
