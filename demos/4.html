@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<meta name="viewport" content="width=device-width">
-	<!--[if lt IE 9]><script src="html5shiv.js"></script>![endif]-->
-	<link rel="stylesheet" href="knacss.css" media="all">
+	<!--[if lt IE 9]><script src="../js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../css/knacss.css" media="all">
 	<style>
 		body {color: #fff;}
 		header {background: tomato}
@@ -15,6 +15,11 @@
 		.col, .content {background: maroon}
 		footer {background: orange}
 		.gut {background: beige}
+        /* box-sizing for IE6/IE7 */
+        /* https://github.com/Schepp/box-sizing-polyfill*/
+        .ie7 *  {
+            behavior: url(../js/boxsizing.htc);
+        }
 	</style>
 </head>
 <body class="w960p center">
