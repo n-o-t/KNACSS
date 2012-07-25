@@ -55,6 +55,14 @@ h3, .h3-like {font-size: 1.8em; } /* 18 pixels */
 h4, .h4-like {font-size: 1.6em; } /* 16 pixels */
 h5, .h5-like {font-size: 1.4em; } /* 14 pixels */
 
+/* alternate font-sizing */
+.smallest {font-size: .7em;}
+.smaller {font-size: .8em;}
+.small {font-size: .9em;}
+.big {font-size: 1.07em;} /* 15 pixels */
+.bigger {font-size: 1.14em;} /* 16 pixels */
+.biggest {font-size: 1.28em;} /* 18 pixels */
+
 /* avoid collapsing margins */
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
     margin-top: 0;
@@ -86,21 +94,6 @@ code, pre, samp {
 
 /* links */
 a img {border: 0;}
-
-/* icons */
-
-/* buttons */
-.btn {
-display: inline-block;
-}
-.btn.alternate {}
-.btn.highlight {}
-.login {}
-.logout {}
-.primary {}
-.warning {}
-.error {}
-.success {}
 
 /* gradients */
 /* http://www.colorzilla.com/gradient-editor/ */
@@ -183,6 +176,9 @@ display: inline-block;
 .txtleft {text-align: left;}
 .txtright {text-align: right;}
 .txtcenter {text-align: center;}
+
+/* juste inline-block */
+.inbl {display: inline-block;}
 
 /* blocks widths (percentage and pixels) */
 .w10 {width: 10%}
@@ -268,7 +264,7 @@ input, button, select {
 
 /* inline-block and table-cell for IE6/IE7 */
 /* warning : .col needs width on IE6/IE7 */
-.ie7 .btn, .ie7 .col {
+.ie7 .btn, .ie7 .col, .ie7 .inbl {
     display: inline;
     zoom: 1;
 }
