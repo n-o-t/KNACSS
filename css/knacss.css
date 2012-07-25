@@ -45,6 +45,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 /* soft reset */
 html, body, blockquote, ul, ol, form {margin: 0; padding: 0;}
 ul, ol {padding-left: 2em}
+.mreset {margin: 0;}
+.preset {padding: 0;}
 
 /* font-sizing for content */
 p, li, td, th, textarea {font-size: 1.4em;}
