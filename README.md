@@ -33,3 +33,18 @@ Installation
 Il n'y a pas d'installation à proprement parler. Ce n'est qu'un fichier CSS que vous pouvez appeler comme il se doit avec un élément link.
 
 Il contient une base minimale de styles prête pour débuter votre projet. Servez-vous en comme un "reset" et faites le évoluer selon votre projet.
+
+Prenez le temps lire toutes les indications et pistes (voir les liens explicatifs fournis par exemple) avant de vous jeter dessus.
+KNACSS n'est pas forcément destiné aux débutants complets et certaines subtilités peuvent avoir de grosses conséquences. 
+
+Par exemple le choix a été fait de modifier tous les calculs des tailles d'éléments à l'aide de la propriété box-sizing, c'est loin d'être anodin et il faut vraiment comprendre ce que cela implique, notamment en terme de compatibilité envers les anciens navigateurs (IE7) et du fichiers "polyfill" requis.
+
+De même pour les positionnements : il est prévu de pouvoir disposer de deux schémas de positionnement différents, de gérer les gouttières et les largeurs des boîtes, nous partons du principe que l'utilisateur maîtrise déjà correctement les positionnements CSS avant d'avoir recours à des frameworks.
+
+Compatibilité
+======
+
+* Firefox, Chrome, Safari, Opera : toutes versions
+* Internet Explorer : toutes versions en général
+* Navigateurs mobiles
+* Particularités IE6 / IE6 : box-sizing nécessite un polyfill (fichier joint), le schéma de positionnement .col doit être accompagné d'une largeur définie (par de blocs fluides sur IE6 / IE7)
