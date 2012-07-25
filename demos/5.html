@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lte IE 7]> <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<!--[if lt IE 9]><script src="../js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../css/knacss.css" media="all">
+	<link rel="stylesheet" href="../css/forms.css" media="all">
+	<style>
+		body {color: #000;}
+		header {background: tomato}
+		aside {background: brown}
+		.col, .content {background: maroon}
+		footer {background: orange}
+		.gut {background: beige}
+        /* box-sizing for IE6/IE7 */
+        /* https://github.com/Schepp/box-sizing-polyfill*/
+        .ie7 *  {
+            behavior: url(../js/boxsizing.htc);
+        }
+	</style>
+</head>
+<body>
+	<form action="/">
+		<fieldset>
+			<p>
+				<label for="name">Name</label>
+				<input type="text" id="name" class="form-text">
+			</p>
+			<p class="form-help">This is help text under the form field.</p>
+		</fieldset>
+		
+		<fieldset>
+			<p>
+				<label for="email">Email</label>
+				<input type="email" id="email" class="form-text">
+			</p>
+		</fieldset>
+		
+		<fieldset>
+			<p>
+				<label for="gender">Gender</label>
+				<select id="gender">
+					<option>Male</option>
+					<option>Female</option>
+					<option>Cylon</option>
+				</select>
+			</p>
+		</fieldset>
+
+		<fieldset class="radio">
+			<p><label for="notifications">Notifications</label></p>
+			<ul class="item">
+				<li><label><input type="radio" name="notifications"> Send me email</label></li>
+				<li><label><input type="radio" name="notifications"> Don't send me email</label></li>
+				<li><label><input type="radio" name="notifications"> Send me flowers</label></li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<p>
+				<label for="url">URL</label>
+				<input type="url" id="url" class="form-text" placeholder="http://yourdomain.com">
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<p>
+				<label for="bio">Bio</label>
+			</p>
+			<textarea id="bio"></textarea>
+		</fieldset>
+		
+		<fieldset class="check">
+			<p>
+				<label><input type="checkbox"> I accept the terms of service and lorem ipsum.</label>
+			</p>
+		</fieldset>
+
+		<fieldset class="form-actions">
+			<p>
+				<input type="submit" value="Submit">
+			</p>
+		</fieldset>
+	</form>			
+					
+	
+</body>
+</html>

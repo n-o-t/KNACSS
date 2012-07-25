@@ -48,7 +48,7 @@ ul, ol {padding-left: 2em}
 
 /* font-sizing for content */
 p, li, td, th, textarea {font-size: 1.4em;}
-li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select, textarea {font-size: 100%;}
+li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select {font-size: 100%;}
 h1, .h1-like {font-size: 2.4em; } /* 24 pixels */
 h2, .h2-like {font-size: 2.0em; } /* 20 pixels */
 h3, .h3-like {font-size: 1.8em; } /* 18 pixels */
