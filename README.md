@@ -32,6 +32,8 @@ Installation
 
 Il n'y a pas d'installation à proprement parler. Ce n'est qu'un fichier CSS que vous pouvez appeler comme il se doit avec un élément link.
 
+  <link rel="stylesheet" href="knacss.css" media="all">
+
 Il contient une base minimale de styles prête pour débuter votre projet. Servez-vous en comme un "reset" et faites le évoluer selon votre projet.
 
 Prenez le temps lire toutes les indications et pistes (voir les liens explicatifs fournis par exemple) avant de vous jeter dessus.
