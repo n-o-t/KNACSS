@@ -25,6 +25,7 @@ En résumé :
 * Il est constitué d'un fichier CSS unique pour éviter des requêtes et des chargements inutiles,
 * Il n'est volontairement associé à aucun préprocesseur tel que LESS ou SASS parce que nous (Alsacréations) ne les employons pas systématiquement, mais rien ne vous en empêche.
 
+KNACSS est sous licence libre CC-BY (http://creativecommons.org/licenses/by/3.0/fr/) 
 Plus d'info : http://www.knacss.com/
 
 Installation
