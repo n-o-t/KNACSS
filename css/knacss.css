@@ -1,5 +1,5 @@
 /*
-KNACSS.com @author : Raphael Goetter, Alsacreations
+KNACSS.com V1.1 @author : Raphael Goetter, Alsacreations
 Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 */
 
@@ -326,7 +326,7 @@ behavior: url(/js/boxsizing.htc);
     }
 }
 
-/* corrects iOS4 / iOS5 orientation bug */
+/* corrects retina iOS orientation zoom */
 @media (max-device-width:768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:2) {
     html {-webkit-text-size-adjust:66%}
 }
