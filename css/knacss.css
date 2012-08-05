@@ -177,8 +177,8 @@ a img {border: 0;}
 .row.gut > * + * {
     border-left: 1em solid #fff; /* must be color of parent background */
 }
-.gut .mod.left {margin-right: 1em}
-.gut .mod.right {margin-left: 1em}
+.line.gut > .left {margin-right: 1em}
+.line.gut > .right {margin-left: 1em}
 
 /* juste inline-block */
 .inbl {display: inline-block;}
