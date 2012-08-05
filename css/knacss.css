@@ -144,12 +144,6 @@ a img {border: 0;}
     padding: 1em;
 }
 
-/* 1em gutter between elements if parent is .gut */
-.line.gut > * + * {margin-left: 1em}
-.row.gut > * + * {
-    border-left: 1em solid #fff; /* must be color of parent background */
-}
-
 /* blocks that needs to be placed under floats */
 .clear, .line, .row {clear: both}
 
@@ -166,16 +160,25 @@ a img {border: 0;}
 /* alignments (blocks and inline) */
 /* ----------------------------- */
 
-/* left and 1em gutter */
+/* left elements */
 .left {float: left; margin-right: 1em}
+.mod.left {margin-right: 0}
 
-/* right and 1em gutter */
+/* right elements */
 .right {float: right; margin-left: 1em}
+.mod.right {margin-left: 0}
 
 .center {margin: auto}
 .txtleft {text-align: left}
 .txtright {text-align: right}
 .txtcenter {text-align: center}
+
+/* 1em gutter between elements if parent is .gut */
+.row.gut > * + * {
+    border-left: 1em solid #fff; /* must be color of parent background */
+}
+.gut .mod.left {margin-right: 1em}
+.gut .mod.right {margin-left: 1em}
 
 /* juste inline-block */
 .inbl {display: inline-block;}
