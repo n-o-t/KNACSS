@@ -122,18 +122,15 @@ a img {border: 0;}
 
 /* block that can contains several .mod , can contains floats */
 .line {}
+
 /* module, contains floats */
-.mod {
-    padding: 1em;
-}
+.mod {padding: 1em}
 
 /* generaly inside .mod, can contains .item */
 .items {}
 
 /* fluid, contains floats, can be placed next to a float */
-.item {
-    overflow: hidden;
-}
+.item {overflow: hidden;}
 
 /* table layout */
 /* ------------------ */
@@ -148,17 +145,13 @@ a img {border: 0;}
 }
 
 /* 1em gutter between elements if parent is .gut */
-.line.gut > * + * {
-    margin-left: 1em;
-}
+.line.gut > * + * {margin-left: 1em}
 .row.gut > * + * {
     border-left: 1em solid #fff; /* must be color of parent background */
 }
 
 /* blocks that needs to be placed under floats */
-.clear, .line, .row {
-    clear: both;
-}
+.clear, .line, .row {clear: both}
 
 /* blocks that can contains floats */
 .clearfix:before, .clearfix:after,
@@ -174,18 +167,15 @@ a img {border: 0;}
 /* ----------------------------- */
 
 /* left and 1em gutter */
-.left {
-    float: left; margin-right: 1em
-}
+.left {float: left; margin-right: 1em}
 
 /* right and 1em gutter */
-.right {
-    float: right; margin-left: 1em
-}
-.center {margin: auto;}
-.txtleft {text-align: left;}
-.txtright {text-align: right;}
-.txtcenter {text-align: center;}
+.right {float: right; margin-left: 1em}
+
+.center {margin: auto}
+.txtleft {text-align: left}
+.txtright {text-align: right}
+.txtcenter {text-align: center}
 
 /* juste inline-block */
 .inbl {display: inline-block;}
@@ -232,7 +222,7 @@ a img {border: 0;}
 .visually-hidden { /* always hidden for screens */
     position: absolute; left:-7000px; text-indent:-7000px; overflow: hidden
 }
-.desktop-hidden {display: none;} /* hidden on desktop */
+.desktop-hidden {display: none} /* hidden on desktop */
 .mobile-hidden {} /* hidden on mobile */
 .tablet-hidden {} /* hidden on tablets */
 .phone-hidden {} /* hidden on smartphones */
@@ -253,9 +243,7 @@ a img {border: 0;}
 /* ==forms */
 /* ----------------------------- */
 
-form, fieldset {
-  border: none;
-}
+form, fieldset {border: none}
 input, button, select {
   vertical-align: middle; /* @bugfix alignment */
 }
