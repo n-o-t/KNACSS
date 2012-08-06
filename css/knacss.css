@@ -162,11 +162,11 @@ a img {border: 0;}
 
 /* left elements */
 .left {float: left; margin-right: 1em}
-.mod.left {margin-right: 0}
+.mod.left, .col.left {margin-right: 0}
 
 /* right elements */
 .right {float: right; margin-left: 1em}
-.mod.right {margin-left: 0}
+.mod.right, .col.right {margin-left: 0}
 
 .center {margin: auto}
 .txtleft {text-align: left}
