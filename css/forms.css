@@ -28,7 +28,7 @@ textarea {
 	min-height: 5em;
 	font-size: 1.75em;
 	vertical-align: top;
-    resize: vertical; 
+	resize: vertical; 
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 	cursor: pointer;
@@ -64,6 +64,7 @@ input[type='submit']::-moz-focus-inner {
 }
 
 /* styling begins here */
+/* change all this the way you like */
 
 form {
 	width: 600px;
@@ -80,37 +81,37 @@ form .form-help {
 	text-indent: 200px;
 }
 form label {
-	float: left;
+	display: inline-block;
 	min-width: 200px;
 	font-weight: 700;
 }
 form li label {
 	font-weight: 400;
 }
-input[type='color'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='email'],
-input[type='month'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='time'],
-input[type='url'],
-input[type='week'],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 select,
 textarea,
 button,
-input[type='button'],
-input[type='reset'] {
+input[type="button"],
+input[type="reset"] {
 	min-width: 300px;
 	padding: .2em 0 .2em .2em;
 	border: 1px solid #ccc;
 }
-input[type='submit'] {
+input[type="submit"] {
 	padding: .5em 1em;
 	border: 1px solid #ccc;
 }
