@@ -305,7 +305,7 @@ behavior: url(/js/boxsizing.htc);
 /* quick smartphone reset */
 @media (max-width: 640px) {
     .phone-hidden {display: none}
-    .mod, .col {
+    .mod, .col, label, fieldset {
      display: block !important;
      margin: 0 !important;
      border: 0 !important;
