@@ -5,7 +5,7 @@ Projet en ligne : http://www.knacss.com/
 
 Téléchargement : https://github.com/raphaelgoetter/KNACSS
 
-Un framework CSS minimaliste qui claque sous la dent !
+KNACSS est une feuille de style CSS minimaliste, responsive et extensible pour débuter une intégration HTML / CSS,
 
 KNACSS est né d'un constat que nous faisons quotidiennement dans notre agence web :
 
