@@ -279,7 +279,7 @@ input, button, select {
     display: inline;
     zoom: 1;
 }
-
+.ie8 img {width: auto} /* @bugfix for IE8 */ 
 /* box-sizing for IE6/IE7 */
 /* https://github.com/Schepp/box-sizing-polyfill
 .ie7 * {
