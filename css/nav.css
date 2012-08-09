@@ -1,4 +1,7 @@
 
+/* nav.css : styles de base pour une navigation responsive.
+Attention : ne fonctionne pas toujours très bien sur les anciens navigateurs ou OS mobiles (par exemple Android 2.1) */
+
 label[for^="toggle"], [type="checkbox"] {cursor: pointer}
 label[for^="toggle"] + [type="checkbox"] {display: none}
 
