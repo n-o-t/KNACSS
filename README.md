@@ -51,3 +51,8 @@ Compatibilité
 * Internet Explorer : toutes versions en général
 * Navigateurs mobiles
 * Particularités IE6 / IE7 : box-sizing nécessite un polyfill (fichier joint), le schéma de positionnement .col doit être accompagné d'une largeur définie (par de blocs fluides sur IE6 / IE7)
+
+Tutoriel pas à pas
+======
+
+Un tutoriel complet est disponible à cette adresse : http://www.knacss.com/demos/tutoriel.html
