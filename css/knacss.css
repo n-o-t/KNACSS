@@ -190,7 +190,7 @@ a img {border: 0;}
 .line.gut4 > * + * {margin-left: 1.333%}
 
 /* juste inline-block */
-.inbl {display: inline-block;}
+.inbl {display: inline-block; vertical-align: top}
 
 /* blocks widths (percentage and pixels) */
 .w10 {width: 10%}
