@@ -114,19 +114,19 @@ a img {border: 0;}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 /* float layout */
 /* ----------- */
 
-/* block that can contains several .mod , can contains floats */
+/* block that can contain several .mod , can contain floats */
 .line {}
 
 /* module, contains floats */
 .mod {padding: 1em}
 
-/* generaly inside .mod, can contains .item */
+/* generaly inside .mod, can contain .item */
 .items {}
 
 /* fluid, contains floats, can be placed next to a float */
@@ -148,7 +148,7 @@ a img {border: 0;}
 /* blocks that needs to be placed under floats */
 .clear, .line, .row {clear: both}
 
-/* blocks that can contains floats */
+/* blocks that can contain floats */
 .clearfix:before, .clearfix:after,
 .line:before, .line:after,
 .mod:before, .mod:after {
@@ -280,7 +280,7 @@ input, button, select {
 	display: inline;
 	zoom: 1;
 }
-.ie8 img {width: auto} /* @bugfix for IE8 */ 
+.ie8 img {width: auto} /* @bugfix for IE8 */
 /* box-sizing for IE6/IE7 */
 /* https://github.com/Schepp/box-sizing-polyfill
 .ie7 * {
