@@ -258,7 +258,7 @@ a img {border: 0;}
 /* ----------------------------- */
 
 form, fieldset {border: none}
-input, button, select {
+input, button, select, label {
 	vertical-align: middle; /* @bugfix alignment */
 }
 
