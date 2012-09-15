@@ -40,36 +40,36 @@ body {
 }
 
 /* HTML5 tags */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block}
 
 /* soft reset */
-html, body, blockquote, ul, ol, form {margin: 0; padding: 0;}
+html, body, blockquote, ul, ol, form {margin: 0; padding: 0}
+p {margin: 0 0 1em}
 ul, ol {padding-left: 2em}
-.mreset {margin: 0;}
-.preset {padding: 0;}
+.mreset {margin: 0}
+.preset {padding: 0}
 
 /* font-sizing for content */
-p, li, td, th, textarea, caption, pre {font-size: 1.4em;}
-li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select {font-size: 100%;}
-h1, .h1-like {font-size: 2.4em; } /* 24 pixels */
-h2, .h2-like {font-size: 2.0em; } /* 20 pixels */
-h3, .h3-like {font-size: 1.8em; } /* 18 pixels */
-h4, .h4-like {font-size: 1.6em; } /* 16 pixels */
-h5, .h5-like {font-size: 1.4em; } /* 14 pixels */
+p, li, td, th, textarea, caption, pre {font-size: 1.4em}
+li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select {font-size: 100%}
+h1, .h1-like {font-size: 2.4em} /* equiv 24 pixels */
+h2, .h2-like {font-size: 2.0em} /* equiv 20 pixels */
+h3, .h3-like {font-size: 1.8em} /* equiv 18 pixels */
+h4, .h4-like {font-size: 1.6em} /* equiv 16 pixels */
+h5, .h5-like {font-size: 1.4em} /* equiv 14 pixels */
 
 /* alternate font-sizing */
-.smallest {font-size: .7em;}
-.smaller {font-size: .8em;}
-.small {font-size: .9em;}
-.big {font-size: 1.07em;} /* 15 pixels */
-.bigger {font-size: 1.14em;} /* 16 pixels */
-.biggest {font-size: 1.28em;} /* 18 pixels */
+.smallest {font-size: .7em}
+.smaller {font-size: .8em}
+.small {font-size: .9em}
+.big {font-size: 1.07em} /* equiv 15 pixels */
+.bigger {font-size: 1.14em} /* equiv 16 pixels */
+.biggest {font-size: 1.28em} /* equiv 18 pixels */
 
 /* avoid collapsing margins */
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
-	margin-top: 0;
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+	margin-top: 0
 }
-
 /* avoid last paragraph bottom margin */
 p:last-child {margin-bottom: 0;}
 
@@ -99,7 +99,8 @@ code, pre, samp {
 	white-space: pre-wrap;
 }
 
-/* links */
+/* pictures */
+img {width: auto; vertical-align: middle}
 a img {border: 0;}
 
 /* gradients */
