@@ -318,3 +318,10 @@ input, button, select, label {
 	}
 	.row {width: 100% !important}
 }
+
+/* iOS orientation bug */
+@media (orientation: landscape) {
+    html, body {
+        -webkit-text-size-adjust: none;
+    }
+}
