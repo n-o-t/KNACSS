@@ -320,7 +320,7 @@ input, button, select, label {
 }
 
 /* iOS orientation bug */
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-device-width: 640px) {
     html, body {
         -webkit-text-size-adjust: none;
     }
