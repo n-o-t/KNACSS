@@ -56,3 +56,5 @@ Tutoriel pas à pas
 ======
 
 Un tutoriel complet est disponible à cette adresse : http://www.knacss.com/demos/tutoriel.html
+
+Un document de présentation au format PDF : http://fr.slideshare.net/goetter/des-css-efficaces-avec-knacss 
