@@ -1,5 +1,5 @@
 /*
-KNACSS.com V1.3 @author : Raphael Goetter, Alsacreations
+www.KNACSS.com V2.0 @author : Raphael Goetter, Alsacreations
 Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 */
 
@@ -18,7 +18,8 @@ Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 8- main
 9- iefix
 10- print
-11- mobile
+11- desktop medias
+12- mobile
 */
 
 /* ----------------------------- */
@@ -30,53 +31,128 @@ Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
 /* ==reset */
 /* ----------------------------- */
 
-/* base font-size corresponds to 10px */
-html {font-size: 62.5%;}
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+	font-size: 62.5%;
+}
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: "Century Gothic", arial, helvetica, sans-serif;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
 	line-height: 1.5; /* adapt to your design */
 }
 
-/* HTML5 tags */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
-
-/* soft reset */
-html, body, blockquote, ul, ol, form {margin: 0; padding: 0}
-p {margin: 0 0 1em;}
-ul, ol {padding-left: 2em;}
-.mreset {margin: 0 !important;}
-.preset {padding: 0 !important;}
-
 /* font-sizing for content */
-p, li, td, th, textarea, caption, pre {font-size: 1.4em;}
-li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select {font-size: 100%}
-h1, .h1-like {font-size: 2.4em;} /* equiv 24 pixels */
-h2, .h2-like {font-size: 2.0em;} /* equiv 20 pixels */
-h3, .h3-like {font-size: 1.8em;} /* equiv 18 pixels */
-h4, .h4-like {font-size: 1.6em;} /* equiv 16 pixels */
-h5, .h5-like {font-size: 1.4em;} /* equiv 14 pixels */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */ 
+p, ul, ol, dl, blockquote, pre, td, th, label, textarea {
+	font-size: 1em; /* equiv 14px */
+	line-height: 1.5em;
+	margin: 1.5em 0;
+}
+h1, .h1-like {
+	font-size:  1.8571em; /* equiv 26px */
+	line-height: 1.6154em;
+	margin:  1.6154em 0 .8077em 0;
+}
+h2, .h2-like {
+	font-size:  1.7143em; /* equiv 24px */
+	line-height: 1.75em;
+	margin:  1.75em 0 .875em 0;
+}
+h3, .h3-like {
+	font-size:  1.5714em; /* equiv 22px */
+	line-height: 1.909em;
+	margin:  1.909em 0 .9545em 0;
+}
+h4, .h4-like {
+	font-size:  1.4286em; /* equiv 20px */
+	line-height:  1.05em;
+	margin:  2.1em 0  1.05em 0;
+}
+h5, .h5-like {
+	font-size:  1.2857em; /* equiv 18px */
+	line-height:  1.1667em;
+	margin:  2.3334em 0  1.1667em 0;
+}
+h6, .h6-like {
+	font-size:  1.1429em; /* equiv 16px */
+	line-height:  1.3125em;
+	margin:  2.625em 0  1.3125em 0;
+}
 
 /* alternate font-sizing */
-.smallest {font-size: .7em;}
-.smaller {font-size: .8em;}
-.small {font-size: .9em;}
-.big {font-size: 1.07em;} /* equiv 15 pixels */
-.bigger {font-size: 1.14em;} /* equiv 16 pixels */
-.biggest {font-size: 1.28em;} /* equiv 18 pixels */
+.smaller {
+	font-size: .7143em; /* equiv 10px */
+	line-height:  2.1em;
+	margin:  2.1em 0  2.1em 0;
+}
+.small {
+	font-size: .8571em; /* equiv 12px */
+	line-height:  1.75em;
+	margin:  1.75em 0  1.75em 0;
+}
+.big {
+	font-size:  1.1429em; /* equiv 16px */
+	line-height:  1.3125em;
+	margin:  1.3125em 0  1.3125em 0;
+}
+.bigger {
+	font-size:  1.2857em; /* equiv 18px */
+	line-height:  1.1667em;
+	margin:  1.1667em 0  1.1667em 0;
+}
+.biggest {
+	font-size:  1.4286em; /* equiv 20px */
+	line-height:  1.05em;
+	margin:  1.05em 0  1.05em 0;
+}
 
-/* avoid collapsing margins */
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+/* soft reset */
+html, body {
+	margin: 0; 
+	padding: 0;
+}
+ul, ol {
+	padding-left: 2em;
+}
+code, pre, samp {
+	white-space: pre-wrap;
+	font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+}
+code {
+	line-height: 1em;
+}
+table {
+	margin-bottom: 1.5em;
+}
+.m-reset {
+	margin: 0 !important;
+}
+.p-reset {
+	padding: 0 !important;
+}
+
+/* avoid collapsing margins on headings */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
 	margin-top: 0;
 }
-/* avoid last paragraph bottom margin */
-p:last-child {margin-bottom: 0;}
 
+/* avoid margins on nested elements */
+li p, li ul, li ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
 
 /* max values */
 img, table, td, blockquote, code, pre, textarea, input, iframe, object, video {
-	max-width: 100%; height: auto;
+	max-width: 100%; 
+	height: auto;
 }
 
 /* you shall not pass */
@@ -88,14 +164,13 @@ textarea, table, td, th, code, pre, samp, div, p {
 	-o-hyphens: auto;
 	hyphens: auto;
 }
-code, pre, samp {white-space: pre-wrap;}
 
 /* pictures */
-img {width: auto; vertical-align: middle}
+img {
+	width: auto; 
+	vertical-align: middle;
+}
 a img {border: 0;}
-
-/* gradients */
-/* http://www.colorzilla.com/gradient-editor/ */
 
 
 /* ----------------------------- */
@@ -138,13 +213,16 @@ a img {border: 0;}
 }
 
 /* blocks that needs to be placed under floats */
-.clear, .line, .row {clear: both}
+.clear, .line, .row {
+	clear: both;
+}
 
 /* blocks that can contain floats */
 .clearfix:before, .clearfix:after,
 .line:before, .line:after,
 .mod:before, .mod:after {
-	content: ""; display: table;
+	content: ""; 
+	display: table;
 }
 .clearfix:after, .line:after, .mod:after {
 	clear: both;
@@ -154,35 +232,38 @@ a img {border: 0;}
 /* ----------------------------- */
 
 /* left elements */
-.left {float: left; margin-right: 1em}
-.mod.left, .col.left {margin-right: 0}
+.left {float: left; margin-right: 1em;}
+.mod.left, .col.left {margin-right: 0;}
 
 /* right elements */
-.right {float: right; margin-left: 1em}
-.mod.right, .col.right {margin-left: 0}
+.right {float: right; margin-left: 1em;}
+.mod.right, .col.right {margin-left: 0;}
 
-.center {margin: auto}
-.txtleft {text-align: left}
-.txtright {text-align: right}
-.txtcenter {text-align: center}
+.center {margin: auto;}
+.txtleft {text-align: left;}
+.txtright {text-align: right;}
+.txtcenter {text-align: center;}
 
 /* 1em gutter between elements if parent is .gut */
 .row.gut > * + * {
 	border-left: 1em solid #fff; /* must be color of parent background */
 }
-.line.gut > .left {margin-right: 1em}
-.line.gut > .right {margin-left: 1em}
+.line.gut > .left {margin-right: 1em;}
+.line.gut > .right {margin-left: 1em;}
 
 /* "multicolumns" with % gutter */
-.line.gut2 > * {width: 49%}
-.line.gut2 > * + * {margin-left: 2%}
-.line.gut3 > * {width: 32.333%}
-.line.gut3 > * + * {margin-left: 1.5%}
-.line.gut4 > * {width: 24%}
-.line.gut4 > * + * {margin-left: 1.333%}
+.line.gut2 > * {width: 49%;}
+.line.gut2 > * + * {margin-left: 2%;}
+.line.gut3 > * {width: 32.333%;}
+.line.gut3 > * + * {margin-left: 1.5%;}
+.line.gut4 > * {width: 24%;}
+.line.gut4 > * + * {margin-left: 1.333%;}
 
-/* juste inline-block */
-.inbl {display: inline-block; vertical-align: top}
+/* just inline-block */
+.inbl {
+	display: inline-block; 
+	vertical-align: top;
+}
 
 /* blocks widths (percentage and pixels) */
 .w10 {width: 10%}
@@ -214,20 +295,26 @@ a img {border: 0;}
 .mw960p {max-width: 960px}
 
 /* margins */
+.mt0 {margin-top: 0}
 .mt1 {margin-top: 1em}
+.mt1-5 {margin-top: 1.5em}
 .mt2 {margin-top: 2em}
+.mt3 {margin-top: 3em}
 .mr1 {margin-right: 1em}
 .mr2 {margin-right: 2em}
+.mb0 {margin-bottom: 0}
 .mb1 {margin-bottom: 1em}
+.mb1-5 {margin-bottom: 1.5em}
 .mb2 {margin-bottom: 2em}
+.mb3 {margin-bottom: 3em}
 .ml1 {margin-left: 1em}
 .ml2 {margin-left: 2em}
 
 /* hiding content */
-.visually-hidden { /* always hidden for screens */
-	position: absolute; left:-7000px; text-indent:-7000px; overflow: hidden
-}
-.desktop-hidden {display: none} /* hidden on desktop */
+.visually-hidden {position: absolute; left:-7000px; overflow: hidden;}
+[dir=rtl] .visually-hidden {left: auto; right:-7000px;}
+
+.desktop-hidden {display: none;} /* hidden on desktop */
 .mobile-hidden {} /* hidden on mobile */
 .tablet-hidden {} /* hidden on tablets */
 .phone-hidden {} /* hidden on smartphones */
@@ -248,7 +335,9 @@ a img {border: 0;}
 /* ==forms */
 /* ----------------------------- */
 
-form, fieldset {border: none}
+form, fieldset {
+	border: none;
+}
 input, button, select, label {
 	vertical-align: middle; /* @bugfix alignment */
 }
@@ -272,9 +361,12 @@ input, button, select, label {
 	display: inline;
 	zoom: 1;
 }
-.ie8 img {width: auto} /* @bugfix for IE8 */
+.ie8 img {
+	width: auto; /* @bugfix for IE8 */
+}
+
 /* box-sizing for IE6/IE7 */
-/* https://github.com/Schepp/box-sizing-polyfill
+/* @source https://github.com/Schepp/box-sizing-polyfill
 .ie67 * {
 	behavior: url(/js/boxsizing.htc);
 }
@@ -288,8 +380,16 @@ input, button, select, label {
 @media print {
 	p, blockquote {orphans: 2; widows: 2;}
 	blockquote, ul, ol {page-break-inside: avoid;}
-	h1, h2, h3, caption { page-break-after: avoid;}
+	h1, h2, h3, caption {page-break-after: avoid;}
 }
+
+/* ----------------------------- */
+/* ==desktop medias */
+/* ----------------------------- */
+
+ @media (min-width: 641px) {
+  /* here goes rules for big resources and big screen like : background-images, font-faces, etc. */
+ }
 
 /* ----------------------------- */
 /* ==mobile */
@@ -308,18 +408,23 @@ input, button, select, label {
 	.phone-hidden {display: none}
 	.mod, .col, label, fieldset {
 		display: block !important;
-		margin: 0 !important;
-		border: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
 		float: none !important;
 		width: auto !important;
 	}
 	[class*="w5"], [class*="w4"], [class*="w3"] {
 		width: auto;
 	}
-	.row {width: 100% !important}
+	.row {width: 100% !important;}
 }
 
-/* iOS orientation bug */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* orientation iOS font-size fix */
 @media (orientation: landscape) and (max-device-width: 640px) {
     html, body {
         -webkit-text-size-adjust: none;
