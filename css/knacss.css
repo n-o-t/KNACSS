@@ -109,7 +109,7 @@ h6, .h6-like {
 }
 
 /* soft reset */
-html, body {
+html, body, label {
 	margin: 0; 
 	padding: 0;
 }
