@@ -1,16 +1,17 @@
-
 /* nav.css : styles de base pour une navigation responsive.
 Attention : ne fonctionne pas toujours très bien sur les anciens navigateurs ou OS mobiles (par exemple Android 2.1) */
 
-label[for^="toggle"], [type="checkbox"] {cursor: pointer}
-label[for^="toggle"] + [type="checkbox"] {display: none}
+label[for^="toggle"],
+[type="checkbox"] {
+	cursor: pointer;
+}
+label[for^="toggle"] + [type="checkbox"] { display: none; }
 
 #navigation ul {
-	margin: 0; padding: 0;
+	margin: 0;
+	padding: 0;
 }
-#navigation li {
-	display: inline;
-}
+#navigation li { display: inline; }
 #navigation li a {
 	display: inline-block;
 	padding: .6em 1em;
@@ -20,37 +21,36 @@ label[for^="toggle"] + [type="checkbox"] {display: none}
 	text-shadow: 1px 1px 0 #fff;
 	background: #eee;
 }
-
-#navigation li a:hover, #navigation li a:active {
+#navigation li a:hover,
+#navigation li a:active {
 	background: #ddd;
 	text-decoration: underline;
 }
 
 @media (max-width: 640px) {
-	
 	/* unicode character for button */
-	[data-icon]:before {content: attr(data-icon);}
-	
+	[data-icon]:before { content: attr(data-icon); }
+
 	/* styling menu button */
 	label[for^="toggle"] {
-		position: absolute; 
+		position: absolute;
 			top: 7px; right: 4px;
 		z-index: 1337;
-		padding: 0.1em 0.25em;
+		padding: .1em .25em;
 		font-size: 3.8em;
-    	font-weight: bold;
-    	line-height: .7em;
-    	background-color: #444;
-		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		font-weight: bold;
+		line-height: .7em;
+		background-color: #444;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
 		border-radius: 4px;
 		color: #fff;
 	}
 
-	/* handling clic with CSS3 target */
+	/* handling click/tap with CSS3 target */
 	#toggle-menu:checked + ul {
-		max-height: 30em !important; /* number of menu items x6em*/
+		max-height: 30em !important; /* number of menu items * 6em */
 	}
-	
+
 	/* styling navigation items */
 	#navigation ul {
 		max-height: 0;
@@ -76,8 +76,8 @@ label[for^="toggle"] + [type="checkbox"] {display: none}
 	#navigation li:last-child a {
 		border-bottom: 1px solid #aaa;
 	}
-	#navigation li a:hover, #navigation li a:active {
+	#navigation li a:hover,
+	#navigation li a:active {
 		text-decoration: none;
 	}
-	
 }

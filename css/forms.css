@@ -1,10 +1,9 @@
 /* Forms.css thanks to HTML5boilerplate, github.com/nathansmith/formalize and www.sitepen.com */
 
-
 /* icons */
 
 /* buttons */
-.btn {display: inline-block;}
+.btn { display: inline-block; }
 .btn.alternate {}
 .btn.highlight {}
 .login {}
@@ -15,34 +14,43 @@
 .success {}
 
 /* forms items */
-label {cursor: pointer;}
-legend {border: 0; white-space: normal;}
-button, input, select {
+label { cursor: pointer; }
+legend {
+	border: 0;
+	white-space: normal;
+}
+button,
+input,
+select {
 	font-size: 100%;
 	margin: 0;
 	vertical-align: baseline;
-	*vertical-align: middle;   /* Improves appearance in IE6/7 */	
+	*vertical-align: middle; /* Improves appearance in IE6/7 */
 }
 textarea {
-	overflow: auto; /*Removes default vertical scrollbar on empty textarea in IE6/7/8/9. */
+	overflow: auto; /* Removes default vertical scrollbar on empty textarea in IE6/7/8/9 */
 	min-height: 5em;
 	font-size: 1.75em;
 	vertical-align: top;
-	resize: vertical; 
+	resize: vertical;
 }
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
 	cursor: pointer;
 	-webkit-appearance: button; /* clickable input types in iOS */
 	*overflow: visible; /* Corrects inner spacing displayed oddly in IE7 */
 }
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
 	padding: 0; /* Corrects excess space around these inputs in IE8/9 */
 	*width: 13px; *height: 13px; /* Corrects excess space around these inputs in IE7 */
 }
-input[type="search"] {-webkit-appearance: textfield;}
+input[type="search"] { -webkit-appearance: textfield; }
 
-/* if select styling bugs on webkit */
-/* select {-webkit-appearance: none;} */
+/* if select styling bugs on WebKit */
+/* select { -webkit-appearance: none; } */
 
 /* 'x' appears on right of search input when text is entered. This removes it */
 input[type="search"]::-webkit-search-decoration,
@@ -51,8 +59,9 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
-::-webkit-input-placeholder {color: #777;}
-input:-moz-placeholder, textarea:-moz-placeholder {color: #777;}
+::-webkit-input-placeholder { color: #777; }
+input:-moz-placeholder,
+textarea:-moz-placeholder   { color: #777; }
 
 /* Removes inner padding and border in FF3+ */
 button::-moz-focus-inner,
@@ -65,7 +74,6 @@ input[type='submit']::-moz-focus-inner {
 
 /* styling begins here */
 /* change all this the way you like */
-
 form {
 	width: 600px;
 	margin-top: 2em;
@@ -74,7 +82,7 @@ form {
 	border: 1px solid #ccc;
 	background: #eee;
 }
-form li {list-style: none;}
+form li { list-style: none; }
 form .form-help {
 	color: #555;
 	font-style: italic;
@@ -85,9 +93,8 @@ form label {
 	min-width: 200px;
 	font-weight: 700;
 }
-form li label {
-	font-weight: 400;
-}
+form li label { font-weight: 400; }
+
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
