@@ -23,7 +23,7 @@ tbody tr:nth-child(odd) {
 tbody tr > * + * {
 	border-left: 1px solid rgba(0, 0, 0, .05);
 }
-tr :last-child {
+tr > :last-child {
 	text-align: right;
 }
 table th,
