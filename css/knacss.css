@@ -158,7 +158,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 /* max values */
-img, table, td, blockquote, code, pre, textarea, input, iframe, object, video {
+img, table, td, blockquote, code, pre, textarea, input, object, video {
 	max-width: 100%;
 	height: auto;
 }
